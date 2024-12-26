@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  font-family: "DM Sans";
+  padding: 22px;
+
+  border-bottom: 1px solid #e8e6e7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 85vh;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.first {
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22.13px;
+  text-align: left;
+  color: #160211;
+}
+.second {
+  text-align: left;
+  font-family: "DM Sans";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 13.02px;
+  color: #636363;
+}
+
+.msg {
+  color: #160211;
+  background: #ffffff80;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  width: 55%;
+}
+
+.msg-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  height: -webkit-fill-available;
+  overflow-y: scroll;
+  justify-content: flex-end;
+}
+.msg-wrapper::-webkit-scrollbar {
+  opacity: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.msg.my-msg {
+  margin-left: auto;
+}
+* {
+  font-family: "Montserrat";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ol {
+  list-style-position: inside;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #1602111a;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
 }
